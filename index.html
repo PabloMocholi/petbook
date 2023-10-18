@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+  <title>Muro principal</title>
+  <style>
+
+    body{
+      margin: 0; /* Pegarlo a la izquierda */
+    }
+
+    h1{
+      text-align: center; /* centro el texto */
+    }
+
+    #nav {
+    
+      position: fixed;
+      top:0;
+      width: 100%;
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      overflow: hidden;
+      background-color:white;
+      border: 1px solid black;
+      height: 60px;
+    }
+
+    .navlist {
+      float: left;
+    }
+
+    .navlist a {
+      display: block;
+      color: black;
+      text-align: center;
+      text-decoration: none;
+      padding: 20px;
+      width: 100px;
+    }
+
+    .navlist a:hover {
+      background-color: black;
+      color: white;
+      border: 1px solid white;
+    }
+
+    .articulos{
+      display: block;
+      width: 100%;
+      background-color:white ;
+      border: 1px solid black;
+      margin-bottom: 30px;
+      height: min-content;
+    }
+    
+    .articulos h3{
+      padding-left: 10px;
+      text-align: center;
+    }
+
+    .articulos p{
+      padding: 30px;
+    }
+
+    #container{
+      display: block;
+      margin-left: 300px;
+      margin-top: 60px;
+  
+    }
+
+    #artcontainer{
+      display: block;
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    #side{
+      position: fixed;
+      width: 300px;
+      height: 800px;
+      top:62px;
+      background-color: white; 
+    }
+
+    #side a{
+      text-decoration: none;  
+      color: black;
+    }
+
+    #side a:hover{
+    
+      color: blueviolet;
+    }
+
+    #side ul{
+      list-style-type: none;
+     
+    }
+
+    #trends{
+      border: 1px solid black;
+      border-radius: 20px;
+      margin-left: 20px;
+      margin-top: 300px
+    }
+
+
+    hr{
+      margin-left: -20px;
+      width: 100%;
+    }
+
+  </style>
+</head>
+
+<body>
+  <ul id="nav">
+    <li class="navlist"><a href="./index.html">Muro</a></li>
+    <li class="navlist"><a href="./profile.html">Perfil</a></li>
+  </ul>
+ 
+  <div>
+    <div id="side">
+      <div id="trends">
+        <h4 style="text-align: center;">Trending Topic</h4>
+        <ul>
+          <li class="linkinterno"><a href=#artPerro>#perretes</a></li>
+          <hr>
+          <li class="linkinterno"><a href=#artGatos>#gatolover</a></li>
+          <hr>
+          <li class="linkinterno"><a href=#artPajaro>#amantedeaves</a></li>
+          <hr>
+          <li class="linkinterno"><a href=#artConejo>#cuterabbit</a></li>
+        </ul>
+      </div>
+  
+    </div>
+    
+    <div id="container">
+      <div id="artcontainer">
+        <article id="artPerro" class="articulos" style="margin-top: 80px;">
+          <h3>PERROS</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Consequatur doloribus iusto cupiditate labore nulla tempora, 
+            praesentium voluptate, culpa libero placeat natus voluptatem, 
+            cum esse assumenda obcaecati sequi nobis sit saepe.</p>
+        </article>
+        <article id="artGatos" class="articulos">
+          <h3>GATOS</h3>
+          <div style="width: 100%;  ">
+             <img src="./images/gato.jpg"
+              alt="gato muy gracioso" style=" display: inline-block; width: 400px; height: 300px;">
+            <p style="display: inline-block; width: 500px;  margin-bottom: 20px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+              Consequatur doloribus iusto cupiditate labore nulla tempora, 
+              praesentium voluptate, culpa libero placeat natus voluptatem, 
+              cum esse assumenda obcaecati sequi nobis sit saepe.</p>
+             
+          </div>
+          
+        </article>
+        <article id="artPajaro" class="articulos">
+          <h3>PÁJAROS</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Consequatur doloribus iusto cupiditate labore nulla tempora, 
+            praesentium voluptate, culpa libero placeat natus voluptatem, 
+            cum esse assumenda obcaecati sequi nobis sit saepe.</p>
+        </article>
+        <article id="artConejo" class="articulos">
+          <h3>CONEJOS</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Consequatur doloribus iusto cupiditate labore nulla tempora, 
+            praesentium voluptate, culpa libero placeat natus voluptatem, 
+            cum esse assumenda obcaecati sequi nobis sit saepe.</p>
+        </article>
+      </div>
+    </div>
+
+  </div>
+
+  
+
+
+
+</body>
+
+</html>
