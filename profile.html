@@ -2,51 +2,60 @@
 <html lang="es">
 
 <head>
-  <meta charset='utf-8'>
+  <meta charset="utf-8" />
   <title>Mi gato Zion</title>
-  <meta name='viewport'
-    content='width=device-width, initial-scale=1'>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <style>
-
-    body{
+    body {
       margin: 0;
+      background-image: url(images/wallpaper.jpg);
     }
-    h1{
+
+    h1 {
       text-align: center;
     }
 
+    #petbookname {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      color: #dbedd6;
+      font-size: 150%;
+      margin-top: 12px;
+      margin-right: 10px;
+      margin-left: 20px;
+      float: left;
+    }
+
     #nav {
-    
-    position: fixed;
-    top:0;
-    width: 100%;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    overflow: hidden;
-    background-color:#3A3A3A;
-    border: 1px solid black;
-    height: 60px;
-  }
+      position: fixed;
+      top: 0;
+      width: 100%;
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      overflow: hidden;
+      background-color: #3a3a3a;
+      border: 1px solid black;
+      height: 60px;
+    }
 
-  .navlist {
-    float: left;
-  }
+    .navlist {
+      float: left;
+    }
 
-  .navlist a {
-    display: block;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    padding: 20px;
-    width: 100px;
-  }
+    .navlist a {
+      display: block;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      padding: 20px;
+      width: 100px;
+    }
 
-  .navlist a:hover {
-    background-color: #DBEDD6;
-    color: black;
-    border: 1px solid white;
-  }
+    .navlist a:hover {
+      background-color: #dbedd6;
+      color: black;
+      border: 1px solid white;
+    }
 
     img {
       width: 800px;
@@ -54,48 +63,93 @@
       display: block;
       margin-left: auto;
       margin-right: auto;
+      border: 1px solid #3a3a3a;
     }
 
-    #contenedor{
-      margin-left: 15px;
+    .h1tit {
+      border: 1px solid #3a3a3a;
+      margin-bottom: 0;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+      width: 800px;
+      height: 100px;
+      padding-top: 60px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: #3a3a3a;
+      color: #dbedd6;
+    }
+
+    th {
+      background-color: #3a3a3a;
+      color: #dbedd6;
+      font-size: 140%;
+    }
+
+    td {
+      text-align: center;
+      font-size: 110%;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+    div a{
+      display: inline-block;
+      width: 48%;
+      text-align: center;
+      margin-bottom: 30px;
     }
   </style>
-
 </head>
 
 <body>
-
   <header>
-    
     <ul id="nav">
+      <li id="petbookname" class="navlist">PETBOOK</li>
       <li class="navlist"><a href="./index.html">Muro</a></li>
-      <li class="navlist"><a href="./profile.html">Perfil</a></li>
+      <li class="navlist" style="float: right">
+        <a href="./profile.html">Perfil</a>
+      </li>
       <li class="navlist"><a href="./top.html">Destacados</a></li>
-      <li><img src="images/icon.png" alt="icon" style="width: 50px;height: 50px;float: right;margin-top: 5px;margin-right: 10px;"></li>
+      <li>
+        <img src="images/icon.png" alt="icon" style="
+              width: 50px;
+              height: 50px;
+              float: right;
+              margin-top: 5px;
+              margin-right: 10px;
+            " />
+      </li>
     </ul>
   </header>
 
   <div id="contenedor">
-
+    <h1 class="h1tit" style="margin-top: 120px">Welcome back, Zion!</h1>
     <div>
-      <img src="./images/gato.jpg"
-        alt="gato muy gracioso">
+      <img src="./images/gato.jpg" alt="gato muy gracioso" />
     </div>
+    <h1 class="h1tit" style="margin-bottom: 60px; margin-top: 0">
+      @peluditoblandito
+    </h1>
 
+    <br />
 
-    <h1>ZION</h1>
-
-    <hr color="black" style="margin-left: -15px;">
-    <br>
-
-    <table style="border: 1px dashed black;">
-      <tr>
+    <table style="
+          width: 50%;
+          border-collapse: collapse;
+          margin-left: 25%;
+          margin-bottom: 60px;
+        ">
+      <tr style="height: 50px">
         <th>Edad</th>
         <th colspan="2">Color y Raza</th>
         <th>Peso</th>
         <th>Personalidad</th>
       </tr>
-      <tr>
+      <tr style="height: 100px">
         <td>Desconocida</td>
         <td>Naranja</td>
         <td>Gatuna</td>
@@ -104,21 +158,35 @@
       </tr>
     </table>
 
-    <h2>CURIOSIDADES:</h2>
-    <ul>
-      <li>Duerme mucho</li>
-      <li>Le encanta tomar el solecito</li>
-      <li>No calla cuando quiere atención</li>
-      <li>No respeta el espacio personal</li>
-      <li>Le encanta ser el centro de atención</li>
-    </ul>
+    <div style="
+          border: 1px solid black;
+          width: 50%;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          margin-bottom: 60px;
+          background-color: white;
+        ">
+      <h2 style="
+            text-align: center;
+            font-size: 200%;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+              sans-serif;
+          ">
+        CURIOSIDADES:
+      </h2>
+      <ul style="margin-left: 20%; font-size: 150%; padding: 10px">
+        <li>Duerme <b style="font-size: 110%">MUCHO</b></li>
+        <li>Le encanta tomar el solecito</li>
+        <li>No calla cuando quiere atención</li>
+        <li>No respeta el espacio personal</li>
+        <li>Le encanta ser el centro de atención</li>
+      </ul>
 
-    <a href="https://www.uv.es/"
-      target="_self">Link Tradicional</a><br>
+      <a href="https://www.uv.es/" target="_self">Link Tradicional</a>
 
-    <a href="https://www.uv.es/"
-      target="_blank">Link Externo</a>
-
+      <a href="https://www.uv.es/" target="_blank">Link Externo</a>
+    </div>
   </div>
 </body>
 

@@ -2,31 +2,40 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport"
-    content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Muro principal</title>
   <style>
-
-    body{
-      margin: 0; /* Pegarlo a la izquierda */
+    body {
+      margin: 0;
+      /* Pegarlo a la izquierda */
       background-image: url(images/wallpaper.jpg);
     }
 
-    h1{
-      text-align: center; /* centro el texto */
+    h1 {
+      text-align: center;
+      /* centro el texto */
+    }
+
+    #petbookname {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      color: #dbedd6;
+      font-size: 150%;
+      margin-top: 12px;
+      margin-right: 10px;
+      margin-left: 20px;
+      float: left;
     }
 
     #nav {
-    
       position: fixed;
-      top:0;
+      top: 0;
       width: 100%;
       list-style-type: none;
       padding: 0;
       margin: 0;
       overflow: hidden;
-      background-color:#3A3A3A;
+      background-color: #3a3a3a;
       border: 1px solid black;
       height: 60px;
     }
@@ -45,269 +54,432 @@
     }
 
     .navlist a:hover {
-      background-color: #DBEDD6;
+      background-color: #dbedd6;
       color: black;
       border: 1px solid white;
     }
 
-    .articulos{
+    .articulos {
       display: block;
       width: 100%;
-    
       margin-bottom: 30px;
-      height: min-content;
     }
-    
-    .articulos h3{
+
+    .articulos h3 {
       padding-left: 10px;
       text-align: center;
     }
 
-    #container{
+    #container {
       display: block;
       margin-left: 300px;
       margin-top: 60px;
     }
 
-    #artcontainer{
+    #artcontainer {
       display: block;
       width: 80%;
       margin-left: auto;
       margin-right: auto;
-    
     }
 
-    .img_post{
-      float: left;  
-      width: 400; 
-      height: 300px;   
+    .img_post {
+      float: left;
+      width: 400;
+      height: 300px;
       margin: 25px 15px 0 50px;
       border-style: inset;
       border-color: white;
+      border-radius: 20px;
     }
 
-    .text_post{
+    .text_post {
       margin-left: 480px;
       padding-top: 10px;
+      margin-bottom: 0;
       font-size: 240%;
       text-align: center;
       font-weight: bold;
     }
 
-    .text_post2{
-    
+    .text_post2 {
       text-align: justify;
       width: 96%;
     }
 
-    .div_art{
-      width: 100%; 
+    .div_art {
+      width: 100%;
       height: 350px;
       border-radius: 20px;
       border: 1px solid black;
     }
 
-    #side{
+    #side {
       position: fixed;
       width: 300px;
       height: 800px;
-      top:62px;
-    
+      top: 62px;
     }
 
-    #side a{
-      text-decoration: none;  
+    #side a {
+      text-decoration: none;
       color: white;
     }
 
-    #side a:hover{
-    
-      color: #DBEDD6;
+    #side a:hover {
+      color: #dbedd6;
     }
 
-    #side ul{
+    #side ul {
       list-style-type: none;
-     
     }
 
-    #trends{
+    #trends {
       border: 1px solid black;
       border-radius: 20px;
       margin-left: 20px;
       margin-top: 300px;
-      background-color: #3A3A3A;
-
+      background-color: #3a3a3a;
     }
 
-
-    hr{
+    hr {
       margin-left: -20px;
       width: 100%;
     }
 
+    #zion {
+      text-decoration: none;
+      color: black;
+    }
+
+    #zion:hover{
+      color: purple;
+    }
   </style>
 </head>
 
 <body>
   <ul id="nav">
+    <li id="petbookname" class="navlist">PETBOOK</li>
     <li class="navlist"><a href="./index.html">Muro</a></li>
-    <li class="navlist"><a href="./profile.html">Perfil</a></li>
+    <li class="navlist" style="float: right;"><a href="./profile.html">Perfil</a></li>
     <li class="navlist"><a href="./top.html">Destacados</a></li>
-    <li><img src="images/icon.png" alt="icon" style="width: 50px;height: 50px;float: right;margin-top: 5px;margin-right: 10px;"></li>
+    <li>
+      <img src="images/icon.png" alt="icon" style="
+            width: 50px;
+            height: 50px;
+            float: right;
+            margin-top: 5px;
+            margin-right: 10px;
+          " />
+    </li>
   </ul>
- 
+
   <div>
     <div id="side">
       <div id="trends">
-        <h4 style="text-align: center;color: white;">Trending Topic</h4>
+        <h4 style="text-align: center; color: white">NO TE PIERDAS ESTO!! </h4>
         <ul>
-          <li class="linkinterno"><a href=#artPerro>#perretes</a></li>
-          <hr>
-          <li class="linkinterno"><a href=#artGatos>#gatolover</a></li>
-          <hr>
-          <li class="linkinterno"><a href=#artPajaro>#amantedeaves</a></li>
-          <hr>
-          <li class="linkinterno"><a href=#artConejo>#cuterabbit</a></li>
+          <li class="linkinterno"><a href="#artPerro">#perretes</a></li>
+          <hr />
+          <li class="linkinterno"><a href="#artGatos">#gatolover</a></li>
+          <hr />
+          <li class="linkinterno"><a href="#artPajaro">#amantedeaves</a></li>
+          <hr />
+          <li class="linkinterno"><a href="#artConejo">#cuterabbit</a></li>
         </ul>
       </div>
-  
     </div>
-    
+
     <div id="container">
       <div id="artcontainer">
-        <article id="artPerro" class="articulos" style="margin-top: 80px;"> 
-          <div class="div_art" style=" background-color: #FDE1D4;">
-            <img class="img_post" src="./images/perro.jpeg"
-             alt="gato muy gracioso">
-            <p class="text_post">GUAU</p>
-           <p class="text_post2"><b>@user:  </b> Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-             Consequatur doloribus iusto cupiditate labore nulla tempora, 
-             praesentium voluptate, culpa libero placeat natus voluptatem, 
-             cum esse assumenda obcaecati sequi nobis sit saepe. 
-             Lorem ipsum dolor sit amet consectetur adipisicing elit.
-             Commodi dolor libero nisi nam, fugiat amet saepe sit,
-             obcaecati, asperiores porro dolorum sint! Quae repudiandae 
-             temporibus qui facere impedit autem nobis.</p>
-             <img src="./images/like.png"
-             alt="like" style="width: 30px; height: 30px; float: right; margin-right: 40px;">
-             <img src="./images/comment.png"
-             alt="like" style="width: 30px; height: 30px; float: right; margin-right: 30px;">
-             <img src="./images/share.png"
-             alt="like" style="width: 30px; height: 30px;float: right; margin-right: 30px;">
-             <img src="./images/save.png"
-             alt="like" style="width: 30px; height: 30px;float: right; margin-right: 30px;">
-            
-         </div>
+        <article id="artPerro" class="articulos" style="margin-top: 80px">
+          <div class="div_art" style="background-color: #fde1d4">
+            <img class="img_post" src="./images/perro.jpeg" alt="gato muy gracioso" />
+            <p class="text_post">El mejor amigo del hombre</p>
+            <p style="font-size: 90%; text-align: center;margin-top: 0;">@elmejorgolden</p>
+            <p class="text_post2">
+              <b>DESCRIPCIÓN: </b>
+              <br>
+              Lorem ipsum dolor sit amet, consectetur
+              adipisicing elit. Consequatur doloribus iusto cupiditate labore
+              nulla tempora, praesentium voluptate, <i>#culpa libero placeat natus
+                #voluptatem, #cum esse assumenda obcaecati sequi nobis sit saepe.</i>
+              <br>
+              <br>
+              <b>CURIOSIDADES: </b>
+            <ul style=" list-style-type: none; padding: 0;margin-top: -15px; ">
+              <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </li>
+              <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </li>
+              <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </li>
+            </ul>
+            </p>
+            <img src="./images/like.png" alt="like" style="
+                  width: 30px;
+                  height: 30px;
+                  float: right;
+                  margin-right: 40px;
+                " />
+            <img src="./images/comment.png" alt="like" style="
+                  width: 30px;
+                  height: 30px;
+                  float: right;
+                  margin-right: 30px;
+                " />
+            <img src="./images/share.png" alt="like" style="
+                  width: 30px;
+                  height: 30px;
+                  float: right;
+                  margin-right: 30px;
+                " />
+            <img src="./images/save.png" alt="like" style="
+                  width: 30px;
+                  height: 30px;
+                  float: right;
+                  margin-right: 30px;
+                " />
+          </div>
         </article>
         <article id="artGatos" class="articulos">
-          <div class="div_art" style="background-color: #DAEEC9;">
-            <img class="img_post" src="./images/gatoo.jpeg"
-             alt="gato muy gracioso">
-             <p class="text_post">MEOW</p>
-           <p class="text_post2"><b>@user:  </b> Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-             Consequatur doloribus iusto cupiditate labore nulla tempora, 
-             praesentium voluptate, culpa libero placeat natus voluptatem, 
-             cum esse assumenda obcaecati sequi nobis sit saepe. 
-             Lorem ipsum dolor sit amet consectetur adipisicing elit.
-             Commodi dolor libero nisi nam, fugiat amet saepe sit,
-             obcaecati, asperiores porro dolorum sint! Quae repudiandae 
-             temporibus qui facere impedit autem nobis.</p>
-             <img src="./images/like.png"
-             alt="like" style="width: 30px; height: 30px; float: right; margin-right: 40px;">
-             <img src="./images/comment.png"
-             alt="like" style="width: 30px; height: 30px; float: right; margin-right: 30px;">
-             <img src="./images/share.png"
-             alt="like" style="width: 30px; height: 30px;float: right; margin-right: 30px;">
-             <img src="./images/save.png"
-             alt="like" style="width: 30px; height: 30px;float: right; margin-right: 30px;">
-            
-         </div>
-          
+          <div class="div_art" style="background-color: #daeec9">
+            <img class="img_post" src="./images/gatoo.jpeg" alt="gato muy gracioso" />
+            <p class="text_post">La dupla gatuna</p>
+            <p style="font-size: 90%; text-align: center;margin-top: 0;">@miau2veces</p>
+            <p class="text_post2">
+              <b>DESCRIPCIÓN: </b>
+              <br>
+              Lorem ipsum dolor sit amet, consectetur
+              adipisicing elit. Consequatur doloribus iusto cupiditate labore
+              nulla tempora, praesentium voluptate, culpa libero placeat natus
+              voluptatem, cum esse assumenda obcaecati sequi <i>#nobis sit saepe.</i>
+              <br>
+              <br>
+              <b>CURIOSIDADES: </b>
+            <ul style=" list-style-type: none; padding: 0;margin-top: -15px; ">
+              <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </li>
+              <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </li>
+              <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </li>
+            </ul>
+            </p>
+            <img src="./images/like.png" alt="like" style="
+                  width: 30px;
+                  height: 30px;
+                  float: right;
+                  margin-right: 40px;
+                " />
+            <img src="./images/comment.png" alt="like" style="
+                  width: 30px;
+                  height: 30px;
+                  float: right;
+                  margin-right: 30px;
+                " />
+            <img src="./images/share.png" alt="like" style="
+                  width: 30px;
+                  height: 30px;
+                  float: right;
+                  margin-right: 30px;
+                " />
+            <img src="./images/save.png" alt="like" style="
+                  width: 30px;
+                  height: 30px;
+                  float: right;
+                  margin-right: 30px;
+                " />
+          </div>
         </article>
         <article id="artPajaro" class="articulos">
-          <div class="div_art" style="background-color: #E3F2F8;">
-            <img class="img_post" src="./images/pajaro.jpeg"
-             alt="gato muy gracioso">
-             <p class="text_post">PIO PIO</p>
-           <p class="text_post2"><b>@user:  </b> Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-             Consequatur doloribus iusto cupiditate labore nulla tempora, 
-             praesentium voluptate, culpa libero placeat natus voluptatem, 
-             cum esse assumenda obcaecati sequi nobis sit saepe. 
-             Lorem ipsum dolor sit amet consectetur adipisicing elit.
-             Commodi dolor libero nisi nam, fugiat amet saepe sit,
-             obcaecati, asperiores porro dolorum sint! Quae repudiandae 
-             temporibus qui facere impedit autem nobis.</p>
-             <img src="./images/like.png"
-             alt="like" style="width: 30px; height: 30px; float: right; margin-right: 40px;">
-             <img src="./images/comment.png"
-             alt="like" style="width: 30px; height: 30px; float: right; margin-right: 30px;">
-             <img src="./images/share.png"
-             alt="like" style="width: 30px; height: 30px;float: right; margin-right: 30px;">
-             <img src="./images/save.png"
-             alt="like" style="width: 30px; height: 30px;float: right; margin-right: 30px;">
-            
-         </div>
+          <div class="div_art" style="background-color: #e3f2f8">
+            <img class="img_post" src="./images/pajaro.jpeg" alt="gato muy gracioso" />
+            <p class="text_post">Este loco nunca calla</p>
+            <p style="font-size: 90%; text-align: center;margin-top: 0;">@cierraelpico</p>
+            <p class="text_post2">
+              <b>DESCRIPCIÓN: </b>
+              <br>
+              Lorem ipsum dolor sit amet, consectetur
+              adipisicing elit. Consequatur doloribus iusto cupiditate labore
+              nulla tempora, praesentium voluptate, culpa libero placeat natus
+              voluptatem, cum esse assumenda obcaecati sequi nobis sit saepe.
+              <br>
+              <br>
+              <b>CURIOSIDADES: </b>
+            <ul style=" list-style-type: none; padding: 0;margin-top: -15px; ">
+              <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </li>
+              <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </li>
+              <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </li>
+            </ul>
+            </p>
+            <img src="./images/like.png" alt="like" style="
+                  width: 30px;
+                  height: 30px;
+                  float: right;
+                  margin-right: 40px;
+                " />
+            <img src="./images/comment.png" alt="like" style="
+                  width: 30px;
+                  height: 30px;
+                  float: right;
+                  margin-right: 30px;
+                " />
+            <img src="./images/share.png" alt="like" style="
+                  width: 30px;
+                  height: 30px;
+                  float: right;
+                  margin-right: 30px;
+                " />
+            <img src="./images/save.png" alt="like" style="
+                  width: 30px;
+                  height: 30px;
+                  float: right;
+                  margin-right: 30px;
+                " />
+          </div>
         </article>
         <article id="artConejo" class="articulos">
-          <div class="div_art" style="background-color: #E2E4EC;" >
-            <img class="img_post" src="./images/conejo.jpeg"
-             alt="gato muy gracioso">
-             <p class="text_post">PSSSS</p>
-           <p class="text_post2"><b>@user:  </b> Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-             Consequatur doloribus iusto cupiditate labore nulla tempora, 
-             praesentium voluptate, culpa libero placeat natus voluptatem, 
-             cum esse assumenda obcaecati sequi nobis sit saepe. 
-             Lorem ipsum dolor sit amet consectetur adipisicing elit.
-             Commodi dolor libero nisi nam, fugiat amet saepe sit,
-             obcaecati, asperiores porro dolorum sint! Quae repudiandae 
-             temporibus qui facere impedit autem nobis.</p>
-             <img src="./images/like.png"
-             alt="like" style="width: 30px; height: 30px; float: right; margin-right: 40px;">
-             <img src="./images/comment.png"
-             alt="like" style="width: 30px; height: 30px; float: right; margin-right: 30px;">
-             <img src="./images/share.png"
-             alt="like" style="width: 30px; height: 30px;float: right; margin-right: 30px;">
-             <img src="./images/save.png"
-             alt="like" style="width: 30px; height: 30px;float: right; margin-right: 30px;">
-            
-         </div>
+          <div class="div_art" style="background-color: #e2e4ec">
+            <img class="img_post" src="./images/conejo.jpeg" alt="gato muy gracioso" />
+            <p class="text_post">El mejor amigo del mago</p>
+            <p style="font-size: 90%; text-align: center;margin-top: 0;">@esponjoso</p>
+            <p class="text_post2">
+              <b>DESCRIPCIÓN: </b>
+              <br>
+              <i>#Lorem ipsum</i> dolor sit amet, consectetur
+              adipisicing elit. Consequatur doloribus iusto cupiditate labore
+              nulla tempora, praesentium voluptate, culpa libero placeat natus
+              voluptatem, cum esse assumenda obcaecati sequi nobis sit saepe.
+              <br>
+              <br>
+              <b>CURIOSIDADES: </b>
+            <ul style=" list-style-type: none; padding: 0;margin-top: -15px; ">
+              <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </li>
+              <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </li>
+              <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </li>
+            </ul>
+            </p>
+            <img src="./images/like.png" alt="like" style="
+                  width: 30px;
+                  height: 30px;
+                  float: right;
+                  margin-right: 40px;
+                " />
+            <img src="./images/comment.png" alt="like" style="
+                  width: 30px;
+                  height: 30px;
+                  float: right;
+                  margin-right: 30px;
+                " />
+            <img src="./images/share.png" alt="like" style="
+                  width: 30px;
+                  height: 30px;
+                  float: right;
+                  margin-right: 30px;
+                " />
+            <img src="./images/save.png" alt="like" style="
+                  width: 30px;
+                  height: 30px;
+                  float: right;
+                  margin-right: 30px;
+                " />
+          </div>
         </article>
         <article id="artConejo" class="articulos">
-          <div class="div_art" style="background-color: #FFD6D4;" >
-            <img class="img_post" src="./images/gallo.jpeg"
-             alt="gato muy gracioso">
-             <p class="text_post">KUKURUKU</p>
-           <p class="text_post2"><b>@user:  </b> Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-             Consequatur doloribus iusto cupiditate labore nulla tempora, 
-             praesentium voluptate, culpa libero placeat natus voluptatem, 
-             cum esse assumenda obcaecati sequi nobis sit saepe. 
-             Lorem ipsum dolor sit amet consectetur adipisicing elit.
-             Commodi dolor libero nisi nam, fugiat amet saepe sit,
-             obcaecati, asperiores porro dolorum sint! Quae repudiandae 
-             temporibus qui facere impedit autem nobis.</p>
-             <img src="./images/like.png"
-             alt="like" style="width: 30px; height: 30px; float: right; margin-right: 40px;">
-             <img src="./images/comment.png"
-             alt="like" style="width: 30px; height: 30px; float: right; margin-right: 30px;">
-             <img src="./images/share.png"
-             alt="like" style="width: 30px; height: 30px;float: right; margin-right: 30px;">
-             <img src="./images/save.png"
-             alt="like" style="width: 30px; height: 30px;float: right; margin-right: 30px;">
-            
-         </div>
+          <div class="div_art" style="background-color: #ffd6d4">
+            <img class="img_post" src="./images/gallo.jpeg" alt="gato muy gracioso" />
+            <p class="text_post">El Gallo Gargallo</p>
+            <p style="font-size: 90%; text-align: center;margin-top: 0;">@kukuruku</p>
+            <p class="text_post2">
+              <b>DESCRIPCIÓN: </b>
+              <br>
+              Lorem ipsum dolor sit amet, consectetur
+              adipisicing elit. Consequatur doloribus iusto cupiditate labore
+              nulla tempora, praesentium voluptate, culpa libero placeat natus
+              voluptatem, cum esse assumenda obcaecati sequi nobis sit saepe.
+              <br>
+              <br>
+              <b>CURIOSIDADES: </b>
+            <ul style=" list-style-type: none; padding: 0;margin-top: -15px; ">
+              <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </li>
+              <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </li>
+              <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </li>
+            </ul>
+            </p>
+            <img src="./images/like.png" alt="like" style="
+                  width: 30px;
+                  height: 30px;
+                  float: right;
+                  margin-right: 40px;
+                " />
+            <img src="./images/comment.png" alt="like" style="
+                  width: 30px;
+                  height: 30px;
+                  float: right;
+                  margin-right: 30px;
+                " />
+            <img src="./images/share.png" alt="like" style="
+                  width: 30px;
+                  height: 30px;
+                  float: right;
+                  margin-right: 30px;
+                " />
+            <img src="./images/save.png" alt="like" style="
+                  width: 30px;
+                  height: 30px;
+                  float: right;
+                  margin-right: 30px;
+                " />
+          </div>
+        </article>
+        <article id="artConejo" class="articulos">
+          <div class="div_art" style="background-color: #fff7d3">
+            <img class="img_post" src="./images/gato.jpg" alt="gato muy gracioso" style="width: 450px;" />
+            <p class="text_post">Cariñoso y empalagoso</p>
+            <p style="font-size: 90%; text-align: center;margin-top: 0;"><a id="zion" href="profile.html">@peluditoblandito</a></p>
+            <p class="text_post2">
+              <b>DESCRIPCIÓN: </b>
+              <br>
+              Lorem ipsum dolor sit amet, consectetur
+              adipisicing elit. Consequatur doloribus iusto cupiditate labore
+              nulla tempora, praesentium voluptate, culpa libero placeat natus
+              voluptatem, cum esse assumenda obcaecati sequi nobis sit saepe.
+              <br>
+              <br>
+              <b>CURIOSIDADES: </b>
+            <ul style=" list-style-type: none; padding: 0;margin-top: -15px; ">
+              <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </li>
+              <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </li>
+              <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </li>
+            </ul>
+            </p>
+            <img src="./images/like.png" alt="like" style="
+                  width: 30px;
+                  height: 30px;
+                  float: right;
+                  margin-right: 40px;
+                " />
+            <img src="./images/comment.png" alt="like" style="
+                  width: 30px;
+                  height: 30px;
+                  float: right;
+                  margin-right: 30px;
+                " />
+            <img src="./images/share.png" alt="like" style="
+                  width: 30px;
+                  height: 30px;
+                  float: right;
+                  margin-right: 30px;
+                " />
+            <img src="./images/save.png" alt="like" style="
+                  width: 30px;
+                  height: 30px;
+                  float: right;
+                  margin-right: 30px;
+                " />
+          </div>
         </article>
 
 
       </div>
-
     </div>
-
   </div>
-
-  
-
-
-
 </body>
 
 </html>
